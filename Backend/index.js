@@ -17,7 +17,7 @@ const app = express();
 const uri = "mongodb+srv://kanikadebnath8759:uM6vVxAven34GOU6@cluster0.wopok.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const corsOptions = {
-  origin: serverconfig.FRONTEND_URL,
+  origin: 'https://hackitup-frontend.vercel.app',
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
@@ -151,6 +151,7 @@ app.post('/generate', async (req, res) => {
       });
 
       const data = await response.json();
+      console.log(data);
       res.json(data);
   } catch (error) {
       console.error(error);
