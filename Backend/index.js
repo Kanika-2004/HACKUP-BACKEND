@@ -17,7 +17,7 @@ const app = express();
 const uri = "mongodb+srv://kanikadebnath8759:uM6vVxAven34GOU6@cluster0.wopok.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const corsOptions = {
-  origin: 'https://youth-up-theta.vercel.app',
+  origin: 'https://youths-up.vercel.app/',
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
